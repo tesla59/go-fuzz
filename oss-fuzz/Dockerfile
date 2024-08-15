@@ -1,11 +1,9 @@
 FROM gcr.io/oss-fuzz-base/base-builder-go
 
-WORKDIR $SRC
+COPY . $SRC/go-fuzz
 
-COPY . go-fuzz
-
-WORKDIR $SRC/go-fuzz
+COPY ./oss-fuzz/build.sh $SRC/
 
 ENV FUZZING_LANGUAGE=go
 
-COPY build.sh $SRC/
+WORKDIR $SRC/go-fuzz
