@@ -1,7 +1,7 @@
-homepage: "https://github.com/tesla59/go-fuzz"
+homepage: "https://github.com/tesla59/go-fuzz-sample"
 primary_contact: "nishant@heim.id"
 language: go
-main_repo: "https://github.com/tesla59/go-fuzz"
+main_repo: "https://github.com/tesla59/go-fuzz-sample"
 fuzzing_engines:
   - libfuzzer
 sanitizers:
