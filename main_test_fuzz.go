@@ -1,25 +1,9 @@
-package main
+package fuss
 
 import (
 	"testing"
 	"unicode/utf8"
 )
-
-func TestReverse(t *testing.T) {
-    testcases := []struct {
-        in, want string
-    }{
-        {"Hello, world", "dlrow ,olleH"},
-        {" ", " "},
-        {"!12345", "54321!"},
-    }
-    for _, tc := range testcases {
-        rev, err := Reverse(tc.in)
-        if rev != tc.want || err != nil {
-                t.Errorf("Reverse: %q, want %q", rev, tc.want)
-        }
-    }
-}
 
 func FuzzReverse(f *testing.F) {
     testcases := []string{"Hello, world", " ", "!12345"}

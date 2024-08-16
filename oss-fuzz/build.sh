@@ -1,2 +1,2 @@
 #!/bin/bash -eu
-compile_go_fuzzer go-fuzz FuzzReverse fuzz_reverse
+compile_go_fuzzer github.com/tesla59/im-so-cooked FuzzReverse fuzz_reverse gofuzz
